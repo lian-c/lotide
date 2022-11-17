@@ -15,4 +15,4 @@ const eqArrays = function(first, sec) {
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3])); // should be falsey
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3",4]),false); // should be falsey
