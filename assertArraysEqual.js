@@ -1,13 +1,7 @@
 // eqArrays will compare 2 arrays and if they're all the same it'll return true
 //assertArraysEqual will log if it's true or false
 
-const eqArrays = function(first, sec) {
-  for (let i = 0; i <= first.length; i++) {
-    if (first[i] !== sec[i]) {
-      return false;
-    }
-  } return true;
-};
+const eqArrays = require('./eqArrays')
 
 const assertArraysEqual = function(first, sec) {
   if (eqArrays(first,sec) === true) {
@@ -17,5 +11,4 @@ const assertArraysEqual = function(first, sec) {
   }
 };
 
-assertArraysEqual([1,2,3],[1,2,3]);
-assertArraysEqual([1,2,3],[1,2,3,4]);
+module.exports = assertArraysEqual;

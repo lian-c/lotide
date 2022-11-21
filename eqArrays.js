@@ -5,4 +5,5 @@ const eqArrays = function(first, sec) {
     }
   } return true;
 };
+
 module.exports = eqArrays;
