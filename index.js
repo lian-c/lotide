@@ -1,6 +1,6 @@
 // index.js **make sure the original file includes module.exports = 
-const head   = require('./head');
-const tail   = require('./tail');
+const head = require('./head');
+const tail = require('./tail');
 const middle = require('./middle');
 const without = require('./without');
 const countOnly = require('./countOnly');
@@ -18,20 +18,20 @@ const takeUntil = require('./takeUntil');
 
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  without: without,
-  countOnly: countOnly,
-  letterPositions: letterPositions,
-  countLetters: countLetters,
-  eqObjects: eqObjects,
-  eqArrays: eqArrays,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual, 
-  map: map,
-  findKey: findKey, 
-  findKeyByValue: findKeyByValue, 
-  takeUntil: takeUntil
+  head,
+  tail,
+  middle,
+  without,
+  countOnly,
+  letterPositions,
+  countLetters,
+  eqObjects,
+  eqArrays,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
+  map,
+  findKey,
+  findKeyByValue,
+  takeUntil
 };
