@@ -4,7 +4,7 @@
   A callback function
 The map function will return a new array based on the results of the callback function. */
 
-const assertArraysEqual = require('./assertArraysEqual');
+// const assertArraysEqual = require('./assertArraysEqual');
 
 const map = function(array, callback) {
   const results = [];
