@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = require('./assertEqual');
 
 const findKeyByValue = function(object, value) { // we are entering the object and value to obtain the key
   for (let key of Object.keys(object)) {  //Object.keys give you an array of the keys in the object,the for..of loop gets the individual key
@@ -15,14 +9,16 @@ const findKeyByValue = function(object, value) { // we are entering the object a
   }
 };
 
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire"
-};
+module.exports = findKeyByValue;
+//test code
+// const bestTVShowsByGenre = {
+//   sci_fi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama: "The Wire"
+// };
 
-findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine");
-findKeyByValue(bestTVShowsByGenre, "The Wire");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine");
+// findKeyByValue(bestTVShowsByGenre, "The Wire");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
